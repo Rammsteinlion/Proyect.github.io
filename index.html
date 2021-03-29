@@ -3,200 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
 
-    <!---Para cambiar el icono de la pestaña del navegador--->
-    <link rel="shortcut icon" href="Assets/Img/icono/icons8-api-64.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="Assets/Css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>FIREBASE</title>
+    <link rel="shortcut icon" href="phonebook.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css">
 </head>
 
 <body>
 
-    <!--a[href="#"]{Inici}o*5-->
-
-    <!-----ENCABEZADO--------->
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca De</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-        </nav>
-
-        <section class="textos-header">
-            <h1>Potencia tus ventas al menos un 200%</h1>
-            <h2>Con una página web potente</h2>
-        </section>
-
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 351.77,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
-    </header>
-
-    <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nuestro Producto</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="Assets/Img/Trabajos/Portafolio.svg" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span> los Mejores Productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque excepturi, distinctio tempora iure sapiente? Cumque temporibus voluptates praesentium consequatur!</p>
-
-                    <h3><span>2</span> los Mejores Productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque excepturi, distinctio tempora iure sapiente? Cumque temporibus voluptates praesentium consequatur!</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">portafolio</h2>
-                <div class="galeria-port">
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img8.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img2.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img3.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img4.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img5.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img6.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                    <div class="image-port">
-                        <img src="Assets/Img/Trabajos/img7.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="Assets/Img/icono/icono_portafolio.png" alt="">
-                            <p>Mi Trabajo</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="clientes contenedor">
-            <h2 class="titulo">Nuestros Clientes</h2>
-            <div class="cards">
+    <div class="contariner p-4">
+        <div class="row">
+            <div class="col-md-6">
                 <div class="card">
-                    <img src="Assets/Img/Trabajos/face1" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, dignissimos?</p>
+                    <div class="card-body">
+                        <form id="task-form" method="post">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="task-title" placeholder="Task Title">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="task-description" row="3" class="form-control" placeholder="Task Description"></textarea>
+                            </div>
+                            <button class="btn btn-primary" id="btn-task-form">Save</button>
+                        </form>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="Assets/Img/Trabajos/face2" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name Dos</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, dignissimos?</p>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div id="task-container" class="col-md-6">
 
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Nuestros Servicios</h2>
-                <div class="servicio-cont">
-
-                    <div class="servicio-ind">
-                        <img src="Assets/Img/Trabajos/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="servicio-ind">
-                        <img src="Assets/Img/Trabajos/ilustracion2.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="servicio-ind">
-                        <img src="Assets/Img/Trabajos/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>8980897</p>
-            </div>
-
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>Admin@admmin.com</p>
-            </div>
-
-            <div class="content-foo">
-                <h4>Location </h4>
-                <p>8980897</p>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; Elkin Murillo | Desing </h2>
-    </footer>
+    </div>
 
 
 
 
-    <script src="Assets/Js/Main.js"></script>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBNd9U9iraVpy0s3szayQJN2bWvIvYexpE",
+            authDomain: "crud-php-68139.firebaseapp.com",
+            projectId: "crud-php-68139",
+            storageBucket: "crud-php-68139.appspot.com",
+            messagingSenderId: "249233098236",
+            appId: "1:249233098236:web:bc85b16134c31eed031e79"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
